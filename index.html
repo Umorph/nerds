@@ -187,11 +187,11 @@
         <form class="write-us" action="https://echo.htmlacademy.ru" method="POST">
             <p class="input-item">
                 <label for="write_name">Ваше имя:</label>
-                <input class="modal-write-name" id="write_name" type="text" name="name" placeholder="Имя Фамилия">
+                <input class="modal-write-name" id="write_name" type="text" name="name" placeholder="Имя Фамилия" required>
             </p>
             <p class="input-item">
                 <label for="write_email">Ваш e-mail:</label>
-                <input class="modal-write-email" id="write_email" type="email" name="email" placeholder="email@example.com">
+                <input class="modal-write-email" id="write_email" type="email" name="email" placeholder="email@example.com" pattern="/^[a-zA-Z0-9.!#$%&*+/=?^_'{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required>
             </p>
             <p class="input-item">
                 <label for="white_text">Текст письма:</label>
