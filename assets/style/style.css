@@ -250,6 +250,47 @@ a {
     background-color: #ffffff;
 }
 
+/* Каталог товаров */
+
+.page-title {
+    font-size: 55px;
+    line-height: 55px;
+    font-weight: 500;
+    color: #000000;
+
+    background-color: #ffffff;
+}
+
+/* Фильтр товаров */
+
+.filter fieldset {
+    border: none;
+}
+
+.filter legend {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000000;
+
+    background-color: #ffffff;
+}
+
+.filter ul {
+    list-style: none;
+}
+
+.filter input {
+    line-height: 20px;
+}
+
+.btn-filter {
+    color: #000000;
+
+    background-color: #eeeeee; 
+}
+
 /* Футер */
 
 .social-list {
