@@ -24,6 +24,44 @@ a {
     margin: -1px;
 }
 
+.button {
+    font: inherit;
+
+
+    text-align: center;
+    vertical-align: middle;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    background-color: #000000;
+    border: none;
+}
+
+.btn-red {
+    background-color: #fb565a;
+}
+
+.btn-red:hover {
+    background-color: #e74246;
+}
+
+.btn-green {
+    background-color: #00ca74;
+}
+
+.btn-green:hover {
+    background-color: #00bc6c;
+}
+
+.btn-yellow {
+    background-color: #efc84a;
+}
+
+.btn-yellow:hover {
+    background-color: #eab534;
+}
+
 /* Шапка сайта */
 
 .main-header {
@@ -62,5 +100,42 @@ a {
 .user-navigation-list li a:active {
     color: #000000;
     opacity: 0.3;
+}
+
+/* Кейвижуал */
+
+.main-keyvisual {
+    background-color: #eeeeee;
+}
+
+.slider-list {
+    list-style: none;
+}
+
+.slider-item b {
+    font-size: 55px;
+    line-height: 55px;
+    font-weight: 500;
+    color: #000000;
+
+    background-color: #eeeeee;
+}
+
+.slider-item:first-child {
+    background-image: url("../img/slide1.png");
+    background-position: 500px 0;
+    background-repeat: no-repeat;
+}
+
+.slider-item:nth-child(2) {
+    background-image: url("../img/slide2.png");
+    background-position: 500px 0;
+    background-repeat: no-repeat;
+}
+
+.slider-item:last-child {
+    background-image: url("../img/slide3.png");
+    background-position: 500px 0;
+    background-repeat: no-repeat;
 }
 
