@@ -139,3 +139,36 @@ a {
     background-repeat: no-repeat;
 }
 
+/* Услгуги */
+
+.services-list {
+    list-style: none;
+}
+
+.services-item:first-child {
+    background-image: url("../img/service1.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.services-item:nth-child(2) {
+    background-image: url("../img/service2.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.services-item:last-child {
+    background-image: url("../img/service3.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.services-item h3 {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000000;
+
+    background-color: #ffffff;
+}
