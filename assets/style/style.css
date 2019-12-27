@@ -195,3 +195,26 @@ a {
 .order-list {
     list-style: none;
 }
+
+/* Статистика */
+
+.main-statistic h4 {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000000;
+
+    background-color: #ffffff;
+}
+
+.statistic-table tr:first-child td {
+    font-size: 45px;
+    line-height: 10px;
+    font-weight: 700;
+    color: #000000;
+
+    background-color: #ffffff;
+}
+
+.statistic-table tr:last-child td {
+    line-height: 18px;
+}
