@@ -172,3 +172,26 @@ a {
 
     background-color: #ffffff;
 }
+
+/* Описание студии */
+
+.studio-topic {
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 500;
+    color: #000000;
+
+    background-color: #ffffff;
+}
+
+.order-topic {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000000;
+
+    background-color: #ffffff;
+}
+
+.order-list {
+    list-style: none;
+}
