@@ -275,3 +275,30 @@ a {
 
     background-color: #ffffff;
 }
+
+/* Модальное окно "Напишите нам" */
+
+.modal-write h2 {
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 700;
+    color: #000000;
+
+    background-color: #ffffff;
+}
+
+.input-item label {
+    line-height: 18px;
+    font-weight: 700;
+    color: #000000;
+
+    background-color: #ffffff;
+}
+
+.input-item input,
+.input-item textarea {
+    line-height: 18px;
+    color: #444444;
+
+    border: 2px solid #d7dcde;
+}
