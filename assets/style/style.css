@@ -218,3 +218,17 @@ a {
 .statistic-table tr:last-child td {
     line-height: 18px;
 }
+
+/* Партнеры */
+
+.partners-list {
+    list-style: none;
+}
+
+.partners-item img {
+    opacity: 0.2;
+}
+
+.partners-item img:hover {
+    opacity: 1;
+}
