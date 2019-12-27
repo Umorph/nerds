@@ -15,3 +15,52 @@ body {
 a {
     text-decoration: none;
 }
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+/* Шапка сайта */
+
+.main-header {
+    background-color: #eeeeee;
+}
+
+.main-logo img:hover {
+    opacity: 0.8;
+}
+
+.main-logo img:active {
+    opacity: 0.3;
+}
+
+.site-navigation-list,
+.user-navigation-list {
+    list-style: none;
+}
+
+.site-navigation-list li a,
+.user-navigation-list li a{
+    line-height: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #000000;
+
+    background-color: #eeeeee;
+}
+
+.site-navigation-list li a:hover,
+.user-navigation-list li a:hover {
+    color: #fb565a;
+}
+
+.site-navigation-list li a:active,
+.user-navigation-list li a:active {
+    color: #000000;
+    opacity: 0.3;
+}
+
