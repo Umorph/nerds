@@ -1,0 +1,345 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #283136;
+
+    background-color: #ffffff;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+.button {
+    font: inherit;
+
+
+    text-align: center;
+    vertical-align: middle;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    background-color: #000000;
+    border: none;
+}
+
+.btn-red {
+    background-color: #fb565a;
+}
+
+.btn-red:hover {
+    background-color: #e74246;
+}
+
+.btn-green {
+    background-color: #00ca74;
+}
+
+.btn-green:hover {
+    background-color: #00bc6c;
+}
+
+.btn-yellow {
+    background-color: #efc84a;
+}
+
+.btn-yellow:hover {
+    background-color: #eab534;
+}
+
+/* Шапка сайта */
+
+.main-header {
+    background-color: #eeeeee;
+}
+
+.main-logo img:hover {
+    opacity: 0.8;
+}
+
+.main-logo img:active {
+    opacity: 0.3;
+}
+
+.site-navigation-list,
+.user-navigation-list {
+    list-style: none;
+}
+
+.site-navigation-list li a,
+.user-navigation-list li a{
+    line-height: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #000000;
+
+    background-color: #eeeeee;
+}
+
+.site-navigation-list li a:hover,
+.user-navigation-list li a:hover {
+    color: #fb565a;
+}
+
+.site-navigation-list li a:active,
+.user-navigation-list li a:active {
+    color: #000000;
+    opacity: 0.3;
+}
+
+/* Кейвижуал */
+
+.main-keyvisual {
+    background-color: #eeeeee;
+}
+
+.slider-list {
+    list-style: none;
+}
+
+.slider-item b {
+    font-size: 55px;
+    line-height: 55px;
+    font-weight: 500;
+    color: #000000;
+
+    background-color: #eeeeee;
+}
+
+.slider-item:first-child {
+    background-image: url("../img/slide1.png");
+    background-position: 500px 0;
+    background-repeat: no-repeat;
+}
+
+.slider-item:nth-child(2) {
+    background-image: url("../img/slide2.png");
+    background-position: 500px 0;
+    background-repeat: no-repeat;
+}
+
+.slider-item:last-child {
+    background-image: url("../img/slide3.png");
+    background-position: 500px 0;
+    background-repeat: no-repeat;
+}
+
+/* Услгуги */
+
+.services-list {
+    list-style: none;
+}
+
+.services-item:first-child {
+    background-image: url("../img/service1.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.services-item:nth-child(2) {
+    background-image: url("../img/service2.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.services-item:last-child {
+    background-image: url("../img/service3.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+
+.services-item h3 {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000000;
+
+    background-color: #ffffff;
+}
+
+/* Описание студии */
+
+.studio-topic {
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 500;
+    color: #000000;
+
+    background-color: #ffffff;
+}
+
+.order-topic {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000000;
+
+    background-color: #ffffff;
+}
+
+.order-list {
+    list-style: none;
+}
+
+/* Статистика */
+
+.main-statistic h4 {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000000;
+
+    background-color: #ffffff;
+}
+
+.statistic-table tr:first-child td {
+    font-size: 45px;
+    line-height: 10px;
+    font-weight: 700;
+    color: #000000;
+
+    background-color: #ffffff;
+}
+
+.statistic-table tr:last-child td {
+    line-height: 18px;
+}
+
+/* Партнеры */
+
+.partners-list {
+    list-style: none;
+}
+
+.partners-item img {
+    opacity: 0.2;
+}
+
+.partners-item img:hover {
+    opacity: 1;
+}
+
+.map-description h4 {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000000;
+
+    background-color: #ffffff;
+}
+
+.map-description p {
+    line-height: 18px;
+    color: #666666;
+
+    background-color: #ffffff;
+}
+
+/* Каталог товаров */
+
+.page-title {
+    font-size: 55px;
+    line-height: 55px;
+    font-weight: 500;
+    color: #000000;
+
+    background-color: #ffffff;
+}
+
+/* Фильтр товаров */
+
+.filter fieldset {
+    border: none;
+}
+
+.filter legend {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000000;
+
+    background-color: #ffffff;
+}
+
+.filter ul {
+    list-style: none;
+}
+
+.filter input {
+    line-height: 20px;
+}
+
+.btn-filter {
+    color: #000000;
+
+    background-color: #eeeeee; 
+}
+
+/* Футер */
+
+.social-list {
+    list-style: none;
+}
+
+.social-item {
+    background-color: #e1e1e1;
+}
+
+.offer-topic {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 700;
+    color: #000000;
+
+    background-color: #ffffff;
+}
+
+.offer-description {
+    line-height: 22px;
+    color: #444444;
+
+    background-color: #ffffff;
+}
+
+/* Модальное окно "Напишите нам" */
+
+.modal-write h2 {
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 700;
+    color: #000000;
+
+    background-color: #ffffff;
+}
+
+.input-item label {
+    line-height: 18px;
+    font-weight: 700;
+    color: #000000;
+
+    background-color: #ffffff;
+}
+
+.input-item input,
+.input-item textarea {
+    line-height: 18px;
+    color: #444444;
+
+    border: 2px solid #d7dcde;
+}
