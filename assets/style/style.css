@@ -291,6 +291,30 @@ a {
     background-color: #eeeeee; 
 }
 
+/* Каталог товаров */
+
+.catalog-list {
+    list-style: none;
+}
+
+.catalog-item h3 {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000000;
+
+    background-color: #ffffff;
+}
+
+.catalog-item p {
+    font-size: 16px;
+    line-height: 18px;
+    color: #666666;
+
+    background-color: #ffffff;
+}
+
 /* Футер */
 
 .social-list {
