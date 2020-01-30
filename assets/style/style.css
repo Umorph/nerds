@@ -71,7 +71,15 @@ a {
 /* Шапка сайта */
 
 .main-header {
+    padding-top: 50px;
+
     background-color: #eeeeee;
+}
+
+.header-columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .main-logo img:hover {
@@ -82,7 +90,19 @@ a {
     opacity: 0.3;
 }
 
-.site-navigation-list,
+.main-navigation {
+    width: 800px;
+    padding-top: 25px;
+}
+
+.site-navigation-list {
+    width: 440px;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
 .user-navigation-list {
     margin: 0;
     padding: 0;
