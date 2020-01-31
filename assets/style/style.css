@@ -479,7 +479,39 @@ a {
     opacity: 0.1;
 }
 
+/* Блок с картой */
+
+.main-map {
+    position: relative;
+    background-image: url("../img/map-marker.png");
+    background-repeat: no-repeat;
+    background-position: 700px 166px;
+}
+
+.main-map img {
+    margin-top: 78px;
+    position: relative;
+    left: -140px;
+    z-index: -1;
+}
+
+.map-description {
+    position: absolute;
+    top: 132px;
+    left: 19px;
+
+    width: 320px;
+    min-height: 308px;
+
+    background-color: #ffffff;
+}
+
 .map-description h4 {
+    margin: 0;
+    padding: 0;
+    padding-top: 49px;
+    padding-left: 51px;
+
     font-size: 18px;
     line-height: 30px;
     font-weight: 700;
@@ -490,10 +522,23 @@ a {
 }
 
 .map-description p {
+    margin: 0;
+    padding: 0;
+    padding-top: 22px;
+    padding-left: 53px;
+
     line-height: 18px;
     color: #666666;
 
     background-color: #ffffff;
+}
+
+.map-description-btn {
+    margin-top: 34px;
+    margin-left: 51px;
+
+    width: 219px;
+    height: 50px;
 }
 
 /* Каталог товаров */
