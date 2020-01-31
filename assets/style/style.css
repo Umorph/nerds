@@ -608,12 +608,49 @@ a {
 
 /* Футер */
 
+.main-footer {
+    display: flex;
+    align-items: center;
+
+    min-height: 203px;
+}
+
 .social-list {
+    display: flex;
+    justify-content: space-between;
+
+    width: 260px;
+    margin: 0;
+    padding: 0;
+    margin-right: 140px;
+
     list-style: none;
 }
 
 .social-item {
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.social-item a {
+    display: block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+
     background-color: #e1e1e1;
+}
+
+.social-item img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.offer-wrapper {
+    width: 600px;
 }
 
 .offer-topic {
@@ -626,6 +663,11 @@ a {
 }
 
 .offer-description {
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+
+
     line-height: 22px;
     color: #444444;
 
