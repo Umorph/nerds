@@ -235,10 +235,17 @@ a {
 .slider-item p {
     max-width: 430px;
     margin: 0;
-    margin-bottom: 38px;
+    margin-bottom: 37px;
 }
 
 /* Услгуги */
+
+.main-services {
+    background-image: url("../img/divide.png");
+    background-repeat: no-repeat;
+    background-position: 20px 506px;
+    padding-bottom: 87px;
+}
 
 .services-list {
     display: flex;
