@@ -62,6 +62,19 @@ a {
 
 /* Шапка сайта */
 
+.page-title {
+    margin: 0;
+    padding: 70px 0 108px 588px;
+
+
+    font-size: 55px;
+    line-height: 55px;
+    font-weight: 500;
+    color: #000000;
+
+    background-color: #eeeeee;
+}
+
 .main-header {
     padding-top: 50px;
 
@@ -556,17 +569,6 @@ a {
 
     width: 219px;
     height: 50px;
-}
-
-/* Каталог товаров */
-
-.page-title {
-    font-size: 55px;
-    line-height: 55px;
-    font-weight: 500;
-    color: #000000;
-
-    background-color: #ffffff;
 }
 
 /* Фильтр товаров */
