@@ -123,6 +123,23 @@ a {
     opacity: 0.3;
 }
 
+.active {
+    position: relative;
+}
+
+.active::after {
+    content: "";
+
+    position: absolute;
+    top: 33px;
+    left: 2px;
+    display: block;
+
+    width: 74px;
+    height: 2px;
+    background-color: #fb565a;
+}
+
 /* Кейвижуал */
 
 .main-keyvisual {
