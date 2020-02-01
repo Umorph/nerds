@@ -676,13 +676,55 @@ a {
 
 /* Модальное окно "Напишите нам" */
 
+.modal-write {
+    display: none;
+
+    position: absolute;
+    top: 1706px;
+    left: 472px;
+    width: 960px;
+    min-height: 590px;
+
+    background-color: #ffffff;
+    box-shadow: 0px 20px 40px 0px rgba(0, 1, 1, 0.75);
+}
+
 .modal-write h2 {
+    margin: 0;
+    padding: 0;
+    padding-top: 67px;
+    padding-left: 98px;
+
     font-size: 45px;
     line-height: 45px;
     font-weight: 700;
     color: #000000;
 
     background-color: #ffffff;
+}
+
+.write-us {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+
+    width: 760px;
+    min-height: 365px;
+}
+
+.input-item {
+    margin: 0;
+    padding-top: 39px;
+}
+
+.input-item:not(:nth-child(3)) {
+    width: 360px;
+}
+
+.input-item:nth-child(3) {
+    width: 760px;
 }
 
 .input-item label {
@@ -693,8 +735,16 @@ a {
     background-color: #ffffff;
 }
 
+.input-item input {
+    height: 43px;
+}
+
 .input-item input,
 .input-item textarea {
+    display: block;
+    width: 100%;
+    resize: none;
+
     line-height: 18px;
     color: #444444;
 
