@@ -1,4 +1,4 @@
-.container {
+/* .container {
     background: rgba(50, 65, 182, 0.2);
     box-shadow: inset 0 0 0 2px rgb(50, 65, 182);
 }
@@ -29,6 +29,11 @@
 }
 
 .filter {
+    background: rgba(234, 155, 45, 0.2);
+    box-shadow: inset 0 0 0 2px rgb(234, 155, 45);
+}
+
+.filter-item {
     background: rgba(234, 255, 45, 0.2);
     box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
 }
@@ -47,3 +52,33 @@
     background: rgba(255, 45, 234, 0.2);
     box-shadow: inset 0 0 0 2px rgb(255, 45, 234);
 }
+
+.catalog-sort {
+    background: rgba(100, 234, 45, 0.2);
+    box-shadow: inset 0 0 0 2px rgb(100, 234, 45);
+}
+
+.sort-topic {
+    background: rgba(100, 10, 45, 0.2);
+    box-shadow: inset 0 0 0 2px rgb(100, 10, 45);
+}
+
+.sort-type-list {
+    background: rgba(10, 34, 45, 0.2);
+    box-shadow: inset 0 0 0 2px rgb(10, 34, 45);
+}
+
+.sort-direction-list {
+    background: rgba(10, 34, 150, 0.2);
+    box-shadow: inset 0 0 0 2px rgb(10, 34, 150);
+}
+
+.catalog-item-hover {
+    background: rgba(10, 34, 150, 0.2);
+    box-shadow: inset 0 0 0 2px rgb(150, 34, 150);
+}
+
+.pagination-item {
+    background: rgba(45, 234, 255, 0.2);
+    box-shadow: inset 0 0 0 2px rgb(45, 234, 255);
+} */
