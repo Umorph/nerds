@@ -1035,17 +1035,17 @@ overflow: hidden;
 }
 
 .pagination-item a {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
+    display: block;
+    padding: 15px 17px;
 
-.pagination-item a {
     font-size: 16px;
     line-height: 18px;
     font-weight: 500;
     color: #000000;
+}
+
+.pagination-next a {
+    padding: 15px 75px;
 }
 
 /* Футер */
