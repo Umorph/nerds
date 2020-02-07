@@ -932,31 +932,72 @@ overflow: hidden;
     width: 100%;
     margin: 0;
     padding: 0;
+    margin-top: 50px;
 
     list-style: none;
 }
 
 .catalog-item {
+    position: relative;
+    
     width: 360px;
-    /* height: 615px; */
+    margin-bottom: 30px;
+}
+
+.catalog-item img {
+    display: block;
+    margin-top: -7px;
+}
+
+.catalog-item-hover {
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+
+    width: 100%;
+
+    background-color: #eeeeee;
+}
+
+.catalog-item:hover.catalog-item svg path,
+.catalog-item:hover .catalog-item-hover {
+    fill: #4d4d4d;
+    z-index: 2;
 }
 
 .catalog-item h3 {
+    margin: 0;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    padding: 0;
+
     font-size: 18px;
     line-height: 30px;
     font-weight: 700;
+    text-align: center;
     text-transform: uppercase;
     color: #000000;
 
-    background-color: #ffffff;
+    background-color: #eeeeee;
 }
 
 .catalog-item p {
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 0;
+
     font-size: 16px;
     line-height: 18px;
+    text-align: center;
     color: #666666;
 
-    background-color: #ffffff;
+    background-color: #eeeeee;
+}
+
+.catalog-item .button {
+    width: 200px;
+    margin: auto;
+    margin-bottom: 45px;
 }
 
 .pagination-list {
