@@ -890,6 +890,8 @@ overflow: hidden;
 
 .sort-type-item {
     margin-right: 26px;
+
+    opacity: 0.3;
 }
 
 .sort-type-item a {
@@ -899,12 +901,6 @@ overflow: hidden;
     text-transform: uppercase;
 
     background-color: #ffffff;
-    opacity: 0.3;
-}
-
-.type-active a,
-.sort-type-item a:hover {
-    opacity: 1;
 }
 
 .sort-direction-list {
@@ -939,8 +935,16 @@ overflow: hidden;
     background-repeat: no-repeat;
 }
 
-.direction-active,
-.sort-direction-item:hover {
+.sort-type-item:hover,
+.sort-type-item:focus,
+.sort-direction-item:hover,
+.sort-direction-item:focus {
+    opacity: 0.6;
+}
+
+.sort-type-item:active,
+.sort-direction-item:active,
+.type-active {
     opacity: 1;
 }
 
