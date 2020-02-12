@@ -121,6 +121,16 @@ overflow: hidden;
     list-style: none;
 }
 
+.navigation-item-current::after {
+    content: "";
+
+    display: block;
+    width: inherit;
+    height: 2px;
+
+    background-color: #fb565a;
+}
+
 .user-navigation-list {
     position: relative;
 
@@ -136,7 +146,12 @@ overflow: hidden;
     list-style: none;
 }
 
-.user-navigation-list::before {
+.bash-link {
+    box-sizing: border-box;
+    padding-left: 45px;
+}
+
+.bash-link::before {
     content: "";
 
     position: absolute;
@@ -301,6 +316,10 @@ overflow: hidden;
     max-width: 430px;
     margin: 0;
     margin-bottom: 37px;
+}
+
+.slider-item-button {
+    background-color: #fb565a;
 }
 
 /* Услгуги */
@@ -616,7 +635,6 @@ overflow: hidden;
     margin: 0;
     margin-top: 55px;
     padding: 0;
-    /* padding-left: 10px; */
 
     border: none;
 }
@@ -758,6 +776,8 @@ overflow: hidden;
     background-image: url("../svg/radio-off.svg");
     background-position: 0 0;
     background-repeat: no-repeat;
+    opacity: 0.4;
+    cursor: pointer;
 }
 
 .filter-input-radio:checked + .filter-label-radio::after {
@@ -774,6 +794,8 @@ overflow: hidden;
     background-image: url("../svg/radio-on.svg");
     background-position: 0 0;
     background-repeat: no-repeat;
+    opacity: 0.4;
+    cursor: pointer;
 }
 
 .filter-input-checkbox + .filter-label-checkbox::before {
@@ -790,6 +812,8 @@ overflow: hidden;
     background-image: url("../svg/checkbox-off.svg");
     background-position: 0 0;
     background-repeat: no-repeat;
+    opacity: 0.4;
+    cursor: pointer;
 }
 
 .filter-input-checkbox:checked + .filter-label-checkbox::after {
@@ -806,7 +830,17 @@ overflow: hidden;
     background-image: url("../svg/checkbox-on.svg");
     background-position: 0 0;
     background-repeat: no-repeat;
+    opacity: 0.4;
+    cursor: pointer;
 }
+
+.filter-option:hover .filter-input-radio + .filter-label-radio::before,
+.filter-option:hover .filter-input-radio:checked + .filter-label-radio::after,
+.filter-option:hover .filter-input-checkbox + .filter-label-checkbox::before,
+.filter-option:hover .filter-input-checkbox:checked + .filter-label-checkbox::after {
+    opacity: 1; 
+}
+
 
 .btn-filter {
     width: 100%;
@@ -815,6 +849,18 @@ overflow: hidden;
     color: #000000;
 
     background-color: #eeeeee; 
+}
+
+.btn-filter:hover,
+.btn-filter:focus {
+    background-color: #dfdfdf;
+}
+
+.btn-filter:active {
+    outline: none;
+    color: rgba(0, 0, 0, 0.3);
+    background-color: #d5d5d5;
+    box-shadow: 0px 3px 0px 0px rgba(0, 1, 1, 0.1) inset;
 }
 
 /* Сортировка */
@@ -859,6 +905,8 @@ overflow: hidden;
 
 .sort-type-item {
     margin-right: 26px;
+
+    opacity: 0.3;
 }
 
 .sort-type-item a {
@@ -868,12 +916,6 @@ overflow: hidden;
     text-transform: uppercase;
 
     background-color: #ffffff;
-    opacity: 0.3;
-}
-
-.type-active a,
-.sort-type-item a:hover {
-    opacity: 1;
 }
 
 .sort-direction-list {
@@ -908,8 +950,16 @@ overflow: hidden;
     background-repeat: no-repeat;
 }
 
-.direction-active,
-.sort-direction-item:hover {
+.sort-type-item:hover,
+.sort-type-item:focus,
+.sort-direction-item:hover,
+.sort-direction-item:focus {
+    opacity: 0.6;
+}
+
+.sort-type-item:active,
+.sort-direction-item:active,
+.type-active {
     opacity: 1;
 }
 
@@ -1018,14 +1068,28 @@ overflow: hidden;
     height: 50px;
     margin-right: 11px;
 
-    background-color: #dbdbdb;
-    border: 3px solid #dbdbdb;
+    background-color: #eeeeee;
+    border: 3px solid #eeeeee;
     border-radius: 2px;
 
 }
 
+.pagination-list li:not(.pagination-item-current):hover {
+    background-color: #dfdfdf;
+    border: 3px solid #dfdfdf;
+}
+
 .pagination-item-current {
     background-color: #ffffff;
+    border: 3px solid #dbdbdb;
+}
+
+.pagination-list li:not(.pagination-item-current):active {
+    outline: none;
+    color: rgba(0, 0, 0, 0.3);
+    background-color: #d5d5d5;
+    border-top: rgba(0, 1, 1, 0.1);
+    box-shadow: 0px 3px 0px 0px rgba(0, 1, 1, 0.1) inset;
 }
 
 .pagination-next {
@@ -1132,13 +1196,13 @@ overflow: hidden;
 /* Модальное окно "Напишите нам" */
 
 .modal-write {
-    display: none;
+    position: fixed;
+    top: 20%;
+    left: 25%;
+    z-index: 100;
 
-    position: absolute;
-    top: 1706px;
-    left: 472px;
+    display: none;
     width: 960px;
-    min-height: 590px;
 
     background-color: #ffffff;
     box-shadow: 0px 20px 40px 0px rgba(0, 1, 1, 0.75);
@@ -1147,7 +1211,7 @@ overflow: hidden;
 .modal-write h2 {
     margin: 0;
     padding: 0;
-    padding-top: 67px;
+    padding-top: 70px;
     padding-left: 98px;
 
     font-size: 45px;
@@ -1171,15 +1235,18 @@ overflow: hidden;
 
 .input-item {
     margin: 0;
-    padding-top: 39px;
+    padding: 0;
 }
 
 .input-item:not(:nth-child(3)) {
     width: 360px;
+
+    margin-top: 40px;
 }
 
 .input-item:nth-child(3) {
     width: 760px;
+    margin-top: 30px;
 }
 
 .input-item label {
@@ -1191,7 +1258,7 @@ overflow: hidden;
 }
 
 .input-item input {
-    height: 43px;
+    height: 50px;
 }
 
 .input-item input,
@@ -1200,8 +1267,58 @@ overflow: hidden;
     width: 100%;
     resize: none;
 
+    box-sizing: border-box;
+    margin-top: 7px;
+    padding: 10px 10px;
+
     line-height: 18px;
     color: #444444;
 
     border: 2px solid #d7dcde;
+}
+
+.input-item input:hover,
+.input-item textarea:hover {
+    border: 2px solid #b4b9bb;
+}
+
+.input-item input:focus,
+.input-item textarea:focus {
+    outline: none;
+    border: 2px solid #000000;
+}
+
+.modal-close {
+    position: absolute;
+    top: 80px;
+    right: 90px;
+
+    width: 21px;
+    height: 21px;
+
+    font-size: 0;
+
+    background-image: url("../svg/close-cross.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: 0;
+    opacity: 0.3;
+
+    cursor: pointer;
+}
+
+.modal-close:hover {
+    opacity: 1;
+}
+
+.modal-close:active {
+    opacity: 0.1;
+}
+
+.modal-write .button {
+    width: 260px;
+
+    margin-top: 50px;
+    margin-bottom: 85px;
 }
