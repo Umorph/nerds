@@ -836,6 +836,18 @@ overflow: hidden;
     background-color: #eeeeee; 
 }
 
+.btn-filter:hover,
+.btn-filter:focus {
+    background-color: #dfdfdf;
+}
+
+.btn-filter:active {
+    outline: none;
+    color: rgba(0, 0, 0, 0.3);
+    background-color: #d5d5d5;
+    box-shadow: 0px 3px 0px 0px rgba(0, 1, 1, 0.1) inset;
+}
+
 /* Сортировка */
 
 .catalog-sort {
