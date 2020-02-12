@@ -635,7 +635,6 @@ overflow: hidden;
     margin: 0;
     margin-top: 55px;
     padding: 0;
-    /* padding-left: 10px; */
 
     border: none;
 }
@@ -777,6 +776,8 @@ overflow: hidden;
     background-image: url("../svg/radio-off.svg");
     background-position: 0 0;
     background-repeat: no-repeat;
+    opacity: 0.4;
+    cursor: pointer;
 }
 
 .filter-input-radio:checked + .filter-label-radio::after {
@@ -793,6 +794,8 @@ overflow: hidden;
     background-image: url("../svg/radio-on.svg");
     background-position: 0 0;
     background-repeat: no-repeat;
+    opacity: 0.4;
+    cursor: pointer;
 }
 
 .filter-input-checkbox + .filter-label-checkbox::before {
@@ -809,6 +812,8 @@ overflow: hidden;
     background-image: url("../svg/checkbox-off.svg");
     background-position: 0 0;
     background-repeat: no-repeat;
+    opacity: 0.4;
+    cursor: pointer;
 }
 
 .filter-input-checkbox:checked + .filter-label-checkbox::after {
@@ -825,7 +830,17 @@ overflow: hidden;
     background-image: url("../svg/checkbox-on.svg");
     background-position: 0 0;
     background-repeat: no-repeat;
+    opacity: 0.4;
+    cursor: pointer;
 }
+
+.filter-option:hover .filter-input-radio + .filter-label-radio::before,
+.filter-option:hover .filter-input-radio:checked + .filter-label-radio::after,
+.filter-option:hover .filter-input-checkbox + .filter-label-checkbox::before,
+.filter-option:hover .filter-input-checkbox:checked + .filter-label-checkbox::after {
+    opacity: 1; 
+}
+
 
 .btn-filter {
     width: 100%;
