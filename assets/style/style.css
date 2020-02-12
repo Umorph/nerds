@@ -1156,6 +1156,7 @@ overflow: hidden;
     left: 25%;
     z-index: 100;
 
+    display: none;
     width: 960px;
 
     background-color: #ffffff;
@@ -1231,6 +1232,17 @@ overflow: hidden;
     border: 2px solid #d7dcde;
 }
 
+.input-item input:hover,
+.input-item textarea:hover {
+    border: 2px solid #b4b9bb;
+}
+
+.input-item input:focus,
+.input-item textarea:focus {
+    outline: none;
+    border: 2px solid #000000;
+}
+
 .modal-close {
     position: absolute;
     top: 80px;
@@ -1246,8 +1258,17 @@ overflow: hidden;
     background-repeat: no-repeat;
     background-color: transparent;
     border: 0;
+    opacity: 0.3;
 
     cursor: pointer;
+}
+
+.modal-close:hover {
+    opacity: 1;
+}
+
+.modal-close:active {
+    opacity: 0.1;
 }
 
 .modal-write .button {
