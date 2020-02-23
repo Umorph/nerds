@@ -1322,3 +1322,14 @@ overflow: hidden;
     margin-top: 50px;
     margin-bottom: 85px;
 }
+
+.main-keyvisual,
+.main-services,
+.index-columns.container,
+.main-studio,
+.main-statistic,
+.main-partners,
+.main-map,
+.main-footer {
+    display: none;
+}
