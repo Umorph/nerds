@@ -57,6 +57,7 @@ overflow: hidden;
     background-color: #fb565a;
     border-radius: 3px;
     border: none;
+    cursor: pointer;
 }
 
 .button:hover,
@@ -94,6 +95,7 @@ overflow: hidden;
 }
 
 .main-logo img:hover {
+    cursor: pointer;
     opacity: 0.8;
 }
 
@@ -1323,4 +1325,8 @@ overflow: hidden;
 
     margin-top: 50px;
     margin-bottom: 85px;
+}
+
+.modal-show {
+    display: block;
 }
