@@ -30,7 +30,9 @@ padding: 0;
 
 white-space: nowrap;
 
-clip-path: inset(100%);
+-webkit-clip-path: inset(100%);
+
+        clip-path: inset(100%);
 clip: rect(0 0 0 0);
 overflow: hidden;
 }
@@ -39,7 +41,8 @@ overflow: hidden;
     width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 .button {
@@ -69,7 +72,8 @@ overflow: hidden;
     color: rgba(255, 255, 255, 0.3);
 
     background-color: #d7373b;
-    box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+    -webkit-box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+            box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
 
 /* Шапка сайта */
@@ -104,17 +108,28 @@ overflow: hidden;
 }
 
 .main-navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     width: 1160px;
     padding-top: 50px;
 }
 
 .site-navigation-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 
     min-width: 440px;
     margin: 0;
@@ -137,10 +152,19 @@ overflow: hidden;
 .user-navigation-list {
     position: relative;
 
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     min-width: 160px;
     margin: 0;
     padding: 0;
@@ -150,7 +174,8 @@ overflow: hidden;
 }
 
 .bash-link {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     padding-left: 45px;
 }
 
@@ -225,7 +250,9 @@ overflow: hidden;
 
     text-align: center;
     font-size: 0;
-    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+        -ms-transform: translate(-50%);
+            transform: translate(-50%);
 }
 
 .slider-controls i {
@@ -336,8 +363,12 @@ overflow: hidden;
 }
 
 .services-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin: 0;
     padding: 0;
 
@@ -414,8 +445,12 @@ overflow: hidden;
 /* Описание студии */
 
 .index-columns {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 
     padding-bottom: 55px;
 
@@ -516,12 +551,18 @@ overflow: hidden;
 /* Партнеры */
 
 .main-partners {
-    background: url("../img/divide.png") 20px 179px no-repeat,
+    background-image: url("../img/divide.png");
+    background-repeat: no-repeat;
+    background-position: 20px 179px;
 }
 
 .partners-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 
     margin: 0;
     padding: 0;
@@ -531,9 +572,14 @@ overflow: hidden;
 }
 
 .partners-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     position: relative;
 
     width: 260px;
@@ -581,6 +627,23 @@ overflow: hidden;
     width: 1200px;
 
     overflow: hidden;
+}
+
+.map-description::before {
+    content: "";
+
+    position: absolute;
+    top: 35px;
+    left: 680px;
+    z-index: 100;
+
+    display: block;
+    width: 231px;
+    height: 190px;
+
+    background-image: url("/assets/img/map-marker.png");
+    background-repeat: no-repeat;
+
 }
 
 .map-description {
@@ -701,7 +764,8 @@ overflow: hidden;
 
     border: 8px solid #ffffff;
     background-color: #ababab;
-    box-shadow: 0 2px 1px 0 #cfcfcf;
+    -webkit-box-shadow: 0 2px 1px 0 #cfcfcf;
+            box-shadow: 0 2px 1px 0 #cfcfcf;
     border-radius: 50%;
     cursor: pointer;
 }
@@ -864,14 +928,19 @@ overflow: hidden;
     outline: none;
     color: rgba(0, 0, 0, 0.3);
     background-color: #d5d5d5;
-    box-shadow: 0px 3px 0px 0px rgba(0, 1, 1, 0.1) inset;
+    -webkit-box-shadow: 0px 3px 0px 0px rgba(0, 1, 1, 0.1) inset;
+            box-shadow: 0px 3px 0px 0px rgba(0, 1, 1, 0.1) inset;
 }
 
 /* Сортировка */
 
 .catalog-sort {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 
     margin-top: 55px;
 }
@@ -890,15 +959,23 @@ overflow: hidden;
 }
 
 .sort-list-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 
     min-width: 360px;
 }
 
 .sort-type-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
 
     margin: 0;
     padding: 0;
@@ -923,8 +1000,12 @@ overflow: hidden;
 }
 
 .sort-direction-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 
     margin: 0;
     padding: 0;
@@ -974,15 +1055,25 @@ overflow: hidden;
 }
 
 .catalog-columns {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .catalog-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-line-pack: center;
+        align-content: center;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -1055,6 +1146,8 @@ overflow: hidden;
 }
 
 .pagination-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: 0;
     margin-top: 30px;
@@ -1067,7 +1160,9 @@ overflow: hidden;
 .pagination-item {
     position: relative;
 
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+            box-sizing: border-box;
     width: 50px;
     height: 50px;
     margin-right: 11px;
@@ -1093,7 +1188,8 @@ overflow: hidden;
     color: rgba(0, 0, 0, 0.3);
     background-color: #d5d5d5;
     border-top: rgba(0, 1, 1, 0.1);
-    box-shadow: 0px 3px 0px 0px rgba(0, 1, 1, 0.1) inset;
+    -webkit-box-shadow: 0px 3px 0px 0px rgba(0, 1, 1, 0.1) inset;
+            box-shadow: 0px 3px 0px 0px rgba(0, 1, 1, 0.1) inset;
 }
 
 .pagination-next {
@@ -1119,15 +1215,23 @@ overflow: hidden;
 /* Футер */
 
 .main-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 
     min-height: 203px;
 }
 
 .social-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 
     width: 260px;
     margin: 0;
@@ -1169,7 +1273,9 @@ overflow: hidden;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
 }
 
 .offer-wrapper {
@@ -1209,7 +1315,8 @@ overflow: hidden;
     width: 960px;
 
     background-color: #ffffff;
-    box-shadow: 0px 20px 40px 0px rgba(0, 1, 1, 0.75);
+    -webkit-box-shadow: 0px 20px 40px 0px rgba(0, 1, 1, 0.75);
+            box-shadow: 0px 20px 40px 0px rgba(0, 1, 1, 0.75);
 }
 
 .modal-write h2 {
@@ -1227,10 +1334,17 @@ overflow: hidden;
 }
 
 .write-us {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: auto;
 
     width: 760px;
@@ -1271,7 +1385,9 @@ overflow: hidden;
     width: 100%;
     resize: none;
 
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+            box-sizing: border-box;
     margin-top: 7px;
     padding: 10px 10px;
 
