@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 body {
     min-width: 1200px;
     margin: 0;
@@ -20,21 +27,21 @@ a {
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
-position: absolute;
+    position: absolute;
 
-width: 1px;
-height: 1px;
-margin: -1px;
-border: 0;
-padding: 0;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
 
-white-space: nowrap;
+    white-space: nowrap;
 
--webkit-clip-path: inset(100%);
+    -webkit-clip-path: inset(100%);
 
-        clip-path: inset(100%);
-clip: rect(0 0 0 0);
-overflow: hidden;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .container {
@@ -42,7 +49,7 @@ overflow: hidden;
     margin: 0 auto;
     padding: 0 20px;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .button {
@@ -73,7 +80,7 @@ overflow: hidden;
 
     background-color: #d7373b;
     -webkit-box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
-            box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
 
 /* Шапка сайта */
@@ -112,8 +119,8 @@ overflow: hidden;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     width: 1160px;
     padding-top: 50px;
 }
@@ -123,13 +130,13 @@ overflow: hidden;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 
     min-width: 440px;
     margin: 0;
@@ -158,13 +165,13 @@ overflow: hidden;
 
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     min-width: 160px;
     margin: 0;
     padding: 0;
@@ -175,7 +182,7 @@ overflow: hidden;
 
 .bash-link {
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     padding-left: 45px;
 }
 
@@ -251,8 +258,8 @@ overflow: hidden;
     text-align: center;
     font-size: 0;
     -webkit-transform: translate(-50%);
-        -ms-transform: translate(-50%);
-            transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
 }
 
 .slider-controls i {
@@ -312,7 +319,7 @@ overflow: hidden;
     padding: 70px 0 80px 0;
 }
 
-.slider-item-current {
+.slider-item:nth-child(1) {
     display: block;
 }
 
@@ -367,8 +374,8 @@ overflow: hidden;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     margin: 0;
     padding: 0;
 
@@ -449,8 +456,8 @@ overflow: hidden;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 
     padding-bottom: 55px;
 
@@ -551,9 +558,7 @@ overflow: hidden;
 /* Партнеры */
 
 .main-partners {
-    background-image: url("../img/divide.png");
-    background-repeat: no-repeat;
-    background-position: 20px 179px;
+    background: url("../img/divide.png") 20px 179px no-repeat;
 }
 
 .partners-list {
@@ -561,8 +566,8 @@ overflow: hidden;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 
     margin: 0;
     padding: 0;
@@ -576,10 +581,10 @@ overflow: hidden;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     position: relative;
 
     width: 260px;
@@ -627,23 +632,6 @@ overflow: hidden;
     width: 1200px;
 
     overflow: hidden;
-}
-
-.map-description::before {
-    content: "";
-
-    position: absolute;
-    top: 35px;
-    left: 680px;
-    z-index: 100;
-
-    display: block;
-    width: 231px;
-    height: 190px;
-
-    background-image: url("../img/map-marker.png");
-    background-repeat: no-repeat;
-
 }
 
 .map-description {
@@ -765,7 +753,7 @@ overflow: hidden;
     border: 8px solid #ffffff;
     background-color: #ababab;
     -webkit-box-shadow: 0 2px 1px 0 #cfcfcf;
-            box-shadow: 0 2px 1px 0 #cfcfcf;
+    box-shadow: 0 2px 1px 0 #cfcfcf;
     border-radius: 50%;
     cursor: pointer;
 }
@@ -906,17 +894,17 @@ overflow: hidden;
 .filter-option:hover .filter-input-radio:checked + .filter-label-radio::after,
 .filter-option:hover .filter-input-checkbox + .filter-label-checkbox::before,
 .filter-option:hover .filter-input-checkbox:checked + .filter-label-checkbox::after {
-    opacity: 1; 
+    opacity: 1;
 }
 
 
 .btn-filter {
     width: 100%;
     margin-top: 55px;
-    
+
     color: #000000;
 
-    background-color: #eeeeee; 
+    background-color: #eeeeee;
 }
 
 .btn-filter:hover,
@@ -929,7 +917,7 @@ overflow: hidden;
     color: rgba(0, 0, 0, 0.3);
     background-color: #d5d5d5;
     -webkit-box-shadow: 0px 3px 0px 0px rgba(0, 1, 1, 0.1) inset;
-            box-shadow: 0px 3px 0px 0px rgba(0, 1, 1, 0.1) inset;
+    box-shadow: 0px 3px 0px 0px rgba(0, 1, 1, 0.1) inset;
 }
 
 /* Сортировка */
@@ -939,8 +927,8 @@ overflow: hidden;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 
     margin-top: 55px;
 }
@@ -963,8 +951,8 @@ overflow: hidden;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 
     min-width: 360px;
 }
@@ -974,8 +962,8 @@ overflow: hidden;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
 
     margin: 0;
     padding: 0;
@@ -1004,8 +992,8 @@ overflow: hidden;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 
     margin: 0;
     padding: 0;
@@ -1059,8 +1047,8 @@ overflow: hidden;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 
 .catalog-list {
@@ -1068,12 +1056,12 @@ overflow: hidden;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -ms-flex-line-pack: center;
-        align-content: center;
+    align-content: center;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -1084,7 +1072,7 @@ overflow: hidden;
 
 .catalog-item {
     position: relative;
-    
+
     width: 360px;
     margin-bottom: 30px;
 }
@@ -1162,7 +1150,7 @@ overflow: hidden;
 
     -webkit-box-sizing: border-box;
 
-            box-sizing: border-box;
+    box-sizing: border-box;
     width: 50px;
     height: 50px;
     margin-right: 11px;
@@ -1189,7 +1177,7 @@ overflow: hidden;
     background-color: #d5d5d5;
     border-top: rgba(0, 1, 1, 0.1);
     -webkit-box-shadow: 0px 3px 0px 0px rgba(0, 1, 1, 0.1) inset;
-            box-shadow: 0px 3px 0px 0px rgba(0, 1, 1, 0.1) inset;
+    box-shadow: 0px 3px 0px 0px rgba(0, 1, 1, 0.1) inset;
 }
 
 .pagination-next {
@@ -1219,8 +1207,8 @@ overflow: hidden;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 
     min-height: 203px;
 }
@@ -1230,8 +1218,8 @@ overflow: hidden;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 
     width: 260px;
     margin: 0;
@@ -1267,15 +1255,15 @@ overflow: hidden;
 
 .social-item a:active img {
     opacity: 0.3;
-} 
+}
 
 .social-item img {
     position: absolute;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 .offer-wrapper {
@@ -1316,7 +1304,7 @@ overflow: hidden;
 
     background-color: #ffffff;
     -webkit-box-shadow: 0px 20px 40px 0px rgba(0, 1, 1, 0.75);
-            box-shadow: 0px 20px 40px 0px rgba(0, 1, 1, 0.75);
+    box-shadow: 0px 20px 40px 0px rgba(0, 1, 1, 0.75);
 }
 
 .modal-write h2 {
@@ -1338,13 +1326,13 @@ overflow: hidden;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     margin: auto;
 
     width: 760px;
@@ -1387,7 +1375,7 @@ overflow: hidden;
 
     -webkit-box-sizing: border-box;
 
-            box-sizing: border-box;
+    box-sizing: border-box;
     margin-top: 7px;
     padding: 10px 10px;
 
