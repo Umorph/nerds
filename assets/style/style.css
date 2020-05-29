@@ -641,7 +641,7 @@ overflow: hidden;
     width: 231px;
     height: 190px;
 
-    background-image: url("/assets/img/map-marker.png");
+    background-image: url("../img/map-marker.png");
     background-repeat: no-repeat;
 
 }
