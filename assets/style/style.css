@@ -319,7 +319,7 @@ input[type="radio"].visually-hidden {
     padding: 70px 0 80px 0;
 }
 
-.slider-item:nth-child(1) {
+.slider-item-current {
     display: block;
 }
 
@@ -347,6 +347,7 @@ input[type="radio"].visually-hidden {
     font-size: 55px;
     line-height: 55px;
     font-weight: 500;
+    color: #000000;
 }
 
 .slider-item p {
