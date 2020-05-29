@@ -210,7 +210,7 @@ input[type="radio"].visually-hidden {
     background-color: #eeeeee;
 }
 
-.site-navigation-list li a:hover,
+.site-navigation-list li:not(.navigation-item-current) a:hover,
 .user-navigation-list li a:hover {
     color: #fb565a;
 }
