@@ -635,6 +635,22 @@ input[type="radio"].visually-hidden {
     overflow: hidden;
 }
 
+.map-description::before {
+    content: "";
+    position: absolute;
+    top: 35px;
+    left: 680px;
+    z-index: 100;
+    display: block;
+    width: 231px;
+    height: 190px;
+
+    background-image: url("/assets/img/map-marker.png");
+    background-image: url("../img/map-marker.png");
+    background-repeat: no-repeat;
+
+}
+
 .map-description {
     position: absolute;
     top: 54px;
